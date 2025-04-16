@@ -39,3 +39,4 @@ out/
 ### Kotlin ###
 .kotlin
 .idea
+src/main/resources/application-secret.yml
