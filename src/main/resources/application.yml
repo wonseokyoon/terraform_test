@@ -1,3 +1,5 @@
 spring:
   application:
     name: terraform_spring
+  profiles:
+    include: secret
