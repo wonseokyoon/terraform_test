@@ -10,15 +10,15 @@ class HomeController(
 ) {
 
     @Value("\${custom.secretWord}")
-    private lateinit var secretWord: String
+    private val secretWord: String = ""
 
     @GetMapping
-    fun main():String{
-        return secretWord
+    fun main(): String {
+        return "Hi, $secretWord"
     }
 
-    @GetMapping("/bucket")
-    fun bucket():List<String>{
+    @GetMapping("/buckets")
+    fun buckets(): List<String> {
         return s3Service.getBucketNames()
     }
 
